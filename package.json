@@ -1,0 +1,20 @@
+{
+  "name": "react-native-mpush",
+  "version": "0.0.1",
+  "description": "React Native MPush",
+  "main": "src/index.js",
+  "author": "stulip",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/stulip/React-Native-MPush.git"
+  },
+  "keywords": [
+    "react-native",
+    "reactnative",
+    "mpush"
+  ],
+  "dependencies": {
+
+  }
+  
+}
