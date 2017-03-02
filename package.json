@@ -6,7 +6,7 @@
   "author": "stulip",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/stulip/React-Native-MPush.git"
+    "url": "git@github.com/stulip/React-Native-MPush.git"
   },
   "keywords": [
     "react-native",
