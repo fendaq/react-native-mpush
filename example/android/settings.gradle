@@ -1,0 +1,5 @@
+rootProject.name = 'example'
+
+include ':app'
+include ':react-native-mpush'
+project(':react-native-mpush').projectDir = new File(rootProject.projectDir, '../../android')

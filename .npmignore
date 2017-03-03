@@ -5,6 +5,7 @@
 *.iml
 .gradle
 .idea
+example
 node_modules
 npm-debug.log
 /android/build
