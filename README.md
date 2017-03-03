@@ -3,6 +3,8 @@
 ## MPush(https://github.com/mpusher/mpush)
 
 
+[![npm downloads](https://img.shields.io/npm/dm/react-native-mpush.svg?style=flat-square)](https://www.npmjs.com/package/react-native-mpush)
+
 ## Getting Started
 
 ### Install
