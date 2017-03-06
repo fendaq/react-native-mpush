@@ -6,6 +6,7 @@
 .gradle
 .idea
 example
+Shapes
 node_modules
 npm-debug.log
 /android/build
