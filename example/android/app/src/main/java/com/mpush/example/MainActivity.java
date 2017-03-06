@@ -1,4 +1,4 @@
-package com.example;
+package com.mpush.example;
 
 import com.facebook.react.ReactActivity;
 

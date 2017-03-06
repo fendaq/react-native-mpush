@@ -20,7 +20,6 @@
 
 package city.tulip.mpush;
 
-import android.app.Notification;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
@@ -37,12 +36,12 @@ public final class MPushFakeService extends Service {
 
     public static void startForeground(Service service) {
         service.startService(new Intent(service, MPushFakeService.class));
-        service.startForeground(NOTIFICATION_ID, new Notification());
+//        service.startForeground(NOTIFICATION_ID, new Notification());
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        startForeground(NOTIFICATION_ID, new Notification());
+//        startForeground(NOTIFICATION_ID, new Notification());
         stopSelf();
         return super.onStartCommand(intent, flags, startId);
     }

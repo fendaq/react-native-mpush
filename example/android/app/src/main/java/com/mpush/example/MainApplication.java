@@ -1,4 +1,4 @@
-package com.example;
+package com.mpush.example;
 
 import android.app.Application;
 

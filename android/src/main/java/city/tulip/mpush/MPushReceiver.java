@@ -29,6 +29,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.NetworkInfo.State;
 import android.os.SystemClock;
+import android.util.Log;
 
 import com.mpush.api.Constants;
 
@@ -78,8 +79,9 @@ public final class MPushReceiver extends BroadcastReceiver {
                 }
             }
         } else if (ACTION_NOTIFY_CANCEL.equals(action)) {//处理通知取消
-            Notifications.I.clean(intent);
+//            Notifications.I.clean(intent);
         }
+        Log.d("MPush", "Receiver");
     }
 
     static void startAlarm(Context context, int delay) {

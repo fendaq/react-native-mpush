@@ -9,7 +9,11 @@ import com.facebook.react.uimanager.ViewManager;
 import java.util.Collections;
 import java.util.List;
 
-
+/**
+ *
+ * @author tangzehua
+ * @since 2017-03-07
+ */
 public class RCTMPushPackage implements ReactPackage {
 
     @Override

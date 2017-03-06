@@ -1,43 +1,25 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example"
-    android:versionCode="1"
-    android:versionName="1.0">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mpush.example">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-
-    <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="22" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
-      android:name=".MainApplication"
-      android:allowBackup="true"
-      android:label="@string/app_name"
-      android:icon="@mipmap/ic_launcher"
-      android:theme="@style/AppTheme">
-      <activity
-        android:name=".MainActivity"
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-        android:windowSoftInputMode="adjustResize">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-      </activity>
-      <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-
-        <receiver
-            android:name="city.tulip.mpush.MPushReceiver"
-            android:enabled="true"
-            android:exported="true">
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-                <action android:name="com.mpush.HEALTH_CHECK" />
-                <action android:name="com.mpush.NOTIFY_CANCEL" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </receiver>
+        </activity>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
 
         <service
             android:name="city.tulip.mpush.MPushService"
@@ -45,22 +27,6 @@
             android:exported="true" />
         <service android:name="city.tulip.mpush.MPushFakeService" />
 
-        <receiver
-            android:name="com.mpush.demo.MyReceiver"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.mpush.MESSAGE_RECEIVED" />      <!--收到PUSH消息-->
-                <action android:name="com.mpush.KICK_USER" />             <!--收到踢人消息-->
-                <action android:name="com.mpush.CONNECTIVITY_CHANGE" />   <!--收到链接变化-->
-                <action android:name="com.mpush.HANDSHAKE_OK" />          <!--收到握手成功消息-->
-                <action android:name="com.mpush.BIND_USER" />             <!--收到绑定用户消息-->
-                <action android:name="com.mpush.UNBIND_USER" />           <!--收到解绑用户消息-->
-
-                <!--此值要改为自己的应用的applicationId  @see MPushService-->
-                <category android:name="com.mpush.android" />
-            </intent-filter>
-        </receiver>
     </application>
 
 </manifest>
